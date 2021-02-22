@@ -61,9 +61,12 @@ def task_5(lst1, lst2):
 
 def task_6(lst):
     """
-        Здесь должен быть ваш код.
-        Переменная lst - ваш список.
-        Финальное значение должно быть помещено в переменную res.
+      lst = list(input())
+c = set(lst)
+d = tuple(c)
+e = (tuple(sorted(d)))
+res = (tuple(reversed(e)))
+print(res)
         """
 
     return res
