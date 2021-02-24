@@ -1,9 +1,19 @@
 def task_1(two_dim_words):
     """
-        Здесь должен быть ваш код.
-        Переменная two_dim_words - ваш двумерный список.
-        Заполнять список значениями не нужно.
-        Финальное значение должно быть помещено в переменную sorted_words.
+#two_dim_words = [['yhjf', 'gnfn'], ['ryjhy', 'bnm'], ['tyjty', 'wegft'], ['dhg', 'qwerqr', 'ghbgdh']]
+list_2 = []
+for i in range(len(two_dim_words)):
+    if len(two_dim_words[i]) > 1:
+        a = len(two_dim_words)
+        for a in range(len(two_dim_words[i])):
+            list_2.append(two_dim_words[i][a])
+    else:
+        list_2.append(two_dim_words[i])
+list_2.sort()
+list_2.sort(key=len)
+sorted_words = list_2
+#print(list_2)
+
         """
 
     return sorted_words
